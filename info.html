@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="page-info">
+        <h1>Student Information</h1>
+        <div id="back">
+            <img src="left.png" alt="">
+            <a href="/custom">Go Back</a>
+        </div>
+        <div id="con-info">
+            <div id="left-info">
+                
+                <div id="add-info">
+                    <!-- Form to add student information -->
+                    <h2>Add Student Information</h2>
+                    <input type="text" id="studentId" placeholder="Enter Student ID">
+                    <input type="text" id="academicPerformance" placeholder="Academic Performance">
+                    <input type="text" id="finalPercentage" placeholder="Final Percentage">
+                    <input type="text" id="address" placeholder="Address">
+                    <div id="ga-info">
+                        <button onclick="addStudentInfo()">Add Information</button>
+                    </div>
+                </div>
+        
+            </div>
+            
+            <div id="right-info">
+                <!-- Display existing student information -->
+                <h2>Existing Student Information</h2>
+                <div id="student-info-list">
+                    <!-- Student information will be listed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="infoScript.js"></script>
+</body>
+</html>

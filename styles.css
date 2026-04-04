@@ -1,0 +1,518 @@
+/* body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    /* color: #fff; */
+    /* background-color: black; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+#students-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Style for student div */
+/* Style for student div */
+.student {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center align items vertically */
+}
+
+/* Style for checkbox */
+input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none; /* Remove default appearance */
+    width: 20px; /* Set width and height */
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Custom checkbox design */
+input[type="checkbox"]::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+    background-color: rgb(248, 87, 87); /* Background color */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Checked state for checkbox */
+input[type="checkbox"]:checked::before {
+    background-color: #15ac05; /* Change background color when checked */
+}
+
+/* Style for the name label */
+label {
+    flex-grow: 1; /* Allow label to grow and take remaining space */
+    margin-left: 10px; /* Add some margin to the left of the label */
+}
+
+/* Style for the whole list container */
+#attendance-list, #meals-list {
+    max-width: 35vw;
+    margin-top: 20px;
+}
+
+
+#page-c{
+    height:100vh;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+}
+#page-c2{
+    height:150vh;
+    width:100%;
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#page-c2 img{
+    height:100%;
+    width:100%;
+    position: absolute;
+    z-index: 1;
+}
+/* #head-1{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    height:20vw;
+    width:35vw;
+}
+#head-1 h6{
+    font-size: 1.5vw;
+} */
+#con-c{
+    height:70vh;
+    width:80vw;
+    background-color: rgba(70, 70, 70, 0.508);
+    display: flex;
+    /* align-items: center; */
+    position: absolute;
+    justify-content: space-between;
+    z-index: 99;
+}
+#attend{
+    height:100%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#meals{
+    height:100%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#info03{
+    height:100%;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-1{
+    height:30vh;
+    width:100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    /* gap: 80px; */
+    padding: 20px;
+    
+
+}
+#nav-1 h2{
+    font-size: 30px;
+}
+#nav-1 img{
+    height:40%;
+    width:4.5%;
+}
+#head-1{
+    color:white;
+    height:70vh;
+    width:90vw;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+#mst{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    height:10vh;
+    width:20vw;
+    /* background-color: yellow; */
+    letter-spacing: 1vw;
+}
+#b1c{
+    height:8vw;
+    width:30vw;
+    color: black;
+    background-color: rgba(27, 247, 60, 0.714);
+    border-radius: 100px;
+    border: solid 1px rgba(255, 255, 255, 0.393);
+    font-size: 2vw;
+
+}
+#b1c a:link {
+    text-decoration: none;
+    color:black;
+  }
+  #b2c a:link {
+    text-decoration: none;
+    color:black;
+  }
+  #b3c a:link {
+    text-decoration: none;
+    color:black;
+  }
+#b2c{
+    height:8vw;
+    width:30vw;
+    color: black;
+    background-color: rgba(27, 53, 247, 0.714);
+    border-radius: 100px;
+    border: solid 1px rgba(255, 255, 255, 0.393);
+    font-size: 2vw;
+}
+#b3c{
+    height:8vw;
+    width:30vw;
+    color: black;
+    background-color: rgba(27, 53, 247, 0.714);
+    border-radius: 100px;
+    border: solid 1px rgba(255, 255, 255, 0.393);
+    font-size: 2vw;
+}
+                                    /* index.html */
+
+                                    #page-a {
+                                        max-width: 1200px;
+                                        margin: 20px auto;
+                                        background-color: #fff;
+                                        padding: 20px;
+                                        border-radius: 8px;
+                                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                    }
+                                    
+                                    h1 {
+                                        text-align: center;
+                                        color: #333;
+                                    }
+                                    
+                                    #back {
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    #back img {
+                                        vertical-align: middle;
+                                        margin-right: 10px;
+                                        height:100%;
+                                        width:3%;
+                                    }
+                                    
+                                    #back a {
+                                        color: #007BFF;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    
+                                    #back a:hover {
+                                        text-decoration: underline;
+                                    }
+                                    
+                                    #con-a {
+                                        display: flex;
+                                        justify-content: space-between;
+                                    }
+                                    
+                                    #left-1, #right-1 {
+                                        width: 48%;
+                                    }
+                                    
+                                    #check-1, #add-1 {
+                                        border: 1px solid #ccc;
+                                        padding: 20px;
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    #check-1 h2, #add-1 h2 {
+                                        border-bottom: 1px solid #ccc;
+                                        padding-bottom: 10px;
+                                        margin-bottom: 20px;
+                                        color: #333;
+                                    }
+                                    
+                                    input[type="date"], input[type="text"] {
+                                        width: 100%;
+                                        padding: 10px;
+                                        margin-bottom: 10px;
+                                        box-sizing: border-box;
+                                        border-radius: 4px;
+                                        border: 1px solid #ccc;
+                                    }
+                                    
+                                    button {
+                                        padding: 10px 20px;
+                                        background-color: #007BFF;
+                                        color: white;
+                                        border: none;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        margin-right: 10px;
+                                        transition: background-color 0.3s ease;
+                                    }
+                                    
+                                    button:hover {
+                                        background-color: #0056b3;
+                                    }
+                                    
+                                    #students-list, #attendance-list {
+                                        border: 1px solid #ccc;
+                                        padding: 20px;
+                                        border-radius: 4px;
+                                        background-color: #f9f9f9;
+                                    }
+                                    
+                                    #students-list h2, #attendance-list h2 {
+                                        border-bottom: 1px solid #ccc;
+                                        padding-bottom: 10px;
+                                        margin-bottom: 20px;
+                                        color: #333;
+                                    }
+                                    
+                                    .student, .attendance-record {
+                                        border-bottom: 1px solid #ccc;
+                                        padding: 10px;
+                                    }
+                                    
+                                    .student label, .attendance-record label {
+                                        display: block;
+                                        margin-bottom: 5px;
+                                        color: #555;
+                                    }
+                                    
+                                    /* meals.html */
+                                    #page-m {
+                                        max-width: 1200px;
+                                        margin: 20px auto;
+                                        background-color: #fff;
+                                        padding: 20px;
+                                        border-radius: 8px;
+                                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                    }
+                                    
+                                    h1 {
+                                        text-align: center;
+                                        color: #333;
+                                    }
+                                    
+                                    #back {
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    #back img {
+                                        vertical-align: middle;
+                                        margin-right: 10px;
+                                    }
+                                    
+                                    #back a {
+                                        color: #007BFF;
+                                        text-decoration: none;
+                                        font-weight: bold;
+                                    }
+                                    
+                                    #back a:hover {
+                                        text-decoration: underline;
+                                    }
+                                    
+                                    #con-m {
+                                        display: flex;
+                                        justify-content: space-between;
+                                    }
+                                    
+                                    #left-m, #right-m {
+                                        width: 48%;
+                                    }
+                                    
+                                    #left-m {
+                                        border: 1px solid #ccc;
+                                        padding: 20px;
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    #left-m h2 {
+                                        border-bottom: 1px solid #ccc;
+                                        padding-bottom: 10px;
+                                        margin-bottom: 20px;
+                                        color: #333;
+                                    }
+                                    
+                                    .mdate {
+                                        width: 100%;
+                                        padding: 10px;
+                                        margin-bottom: 20px;
+                                        box-sizing: border-box;
+                                        border-radius: 4px;
+                                        border: 1px solid #ccc;
+                                    }
+                                    
+                                    #func {
+                                        text-align: center;
+                                    }
+                                    
+                                    .bm {
+                                        padding: 10px 20px;
+                                        background-color: #007BFF;
+                                        color: white;
+                                        border: none;
+                                        border-radius: 4px;
+                                        cursor: pointer;
+                                        margin-right: 10px;
+                                        transition: background-color 0.3s ease;
+                                    }
+                                    
+                                    .bm:hover {
+                                        background-color: #0056b3;
+                                    }
+                                    
+                                    #right-m {
+                                        border: 1px solid #ccc;
+                                        padding: 20px;
+                                        border-radius: 4px;
+                                        background-color: #f9f9f9;
+                                    }
+                                    
+                                    #right-m h2 {
+                                        border-bottom: 1px solid #ccc;
+                                        padding-bottom: 10px;
+                                        margin-bottom: 20px;
+                                        color: #333;
+                                    }
+                                    
+                                    .meal-record {
+                                        border-bottom: 1px solid #ccc;
+                                        padding: 10px;
+                                    }
+                                    
+                                    .meal-record label {
+                                        display: block;
+                                        margin-bottom: 5px;
+                                        color: #555;
+                                    }
+
+                                /* info.html */
+/* styles.css */
+
+#page-info {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#con-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+#left-info, #right-info {
+    width: 48%;
+}
+
+#add-info, #student-info-list {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+#add-info{
+    color: black;
+}
+
+#add-info h2, #right-info h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.student-info {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.student-info label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meal Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="page-m">
+        <h1>Meal Management System</h1>
+        <div id="back">
+            <img src="left.png" alt="">
+            <a href="/custom">Go Back</a>
+        </div>
+
+        <div id="con-m">
+            
+            
+    
+            <div id="left-m">
+                <h2>Select Meal Date</h2>
+
+                <input class="mdate" type="date" id="selectedDate">
+                <div id="func">
+                    <button class="bm" onclick="fetchMealsStudents()">Fetch Students</button>
+            
+                    <button class="bm" onclick="submitMeals()">Submit</button>
+                </div>
+                
+                <!-- <a href="/custom">Go to Custom Page</a> -->
+            </div>
+            
+            <div id="right-m">
+                <div id="meals-list"></div>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

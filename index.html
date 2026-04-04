@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="page-a">
+        <h1>Attendance Records/Add Students</h1>
+        <div id="back">
+            <img src="left.png" alt="">
+            <a href="/custom">Go Back</a>
+        </div>
+        <div id="con-a">
+            <div id="left-1">
+                
+        
+                <div id="check-1">
+                        <h2>Select Attendance Date</h2>
+                    <input class="ades"  type="date" id="selectedDate">
+                    <div id="ga1">
+                        <button id="ba1" onclick="fetchAttendanceStudents() ">Fetch Students</button>
+        
+                        <button id="ba2" onclick="submitAttendance()">Submit</button>
+                    </div>
+                    
+                </div>
+
+                <div id="add-1">
+                    <!-- Form to add new student -->
+                    
+                        <h2>Add New Student</h2>
+                        <input class="ades" type="text" id="newStudentName" placeholder="Enter student name">
+                        <div id="ga1">
+                            <button id="ba1" onclick="addStudent()">Add Student</button>
+                        </div>
+                        
+                    
+                </div>
+        
+            </div>
+            
+            
+            <div id="right-1">
+                    <!-- Display existing students -->
+                <div id="students-list">
+                    <!-- Students will be listed here -->
+                </div>
+        
+                <div id="attendance-list"></div>
+            </div>
+        </div>
+
+    </div>
+
+    
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
